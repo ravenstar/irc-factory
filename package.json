@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      "irc-factory@github:ravenstar/irc-factory",
+      "/home/lokar/Code/iWizard"
+    ]
+  ],
+  "_from": "ravenstar/irc-factory",
+  "_id": "irc-factory@1.10.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/irc-factory",
+  "_phantomChildren": {},
+  "_requested": {
+    "hosted": {
+      "directUrl": "https://raw.githubusercontent.com/ravenstar/irc-factory/master/package.json",
+      "gitUrl": "git://github.com/ravenstar/irc-factory.git",
+      "httpsUrl": "git+https://github.com/ravenstar/irc-factory.git",
+      "shortcut": "github:ravenstar/irc-factory",
+      "ssh": "git@github.com:ravenstar/irc-factory.git",
+      "sshUrl": "git+ssh://git@github.com/ravenstar/irc-factory.git",
+      "type": "github"
+    },
+    "name": "irc-factory",
+    "raw": "irc-factory@github:ravenstar/irc-factory",
+    "rawSpec": "github:ravenstar/irc-factory",
+    "scope": null,
+    "spec": "github:ravenstar/irc-factory",
+    "type": "hosted"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git://github.com/ravenstar/irc-factory.git#6a7f739bda7fe3a6c6201edce2fab64699c17167",
+  "_shasum": "f1e1ce068e5d23d2021c455fe3a3177a77c8e363",
+  "_shrinkwrap": null,
+  "_spec": "irc-factory@github:ravenstar/irc-factory",
+  "_where": "/home/lokar/Code/iWizard",
+  "author": {
+    "email": "ricki@ircanywhere.com",
+    "name": "Ricki Hastings",
+    "url": "https://ircanywhere.com"
+  },
+  "bugs": {
+    "url": "http://github.com/ircanywhere/irc-factory/issues"
+  },
+  "contributors": [
+    {
+      "name": "Ricki Hastings",
+      "email": "ricki@ircanywhere.com"
+    }
+  ],
+  "dependencies": {
+    "axon": "1.0.0",
+    "eventemitter2": "0.4.13",
+    "irc-message": "2.0.1",
+    "irc-socket": "github:ircanywhere/irc-socket",
+    "json-stringify-safe": "^5.0.0",
+    "lodash": "2.4.1",
+    "pause-queue": "~0.1.0"
+  },
+  "description": "A library for creating multiple persistant IRC clients and managing them based on irc-socket and irc-message",
+  "devDependencies": {
+    "mocha": "1.15.1",
+    "should": "2.1.0",
+    "sinon": "1.2.0"
+  },
+  "gitHead": "6a7f739bda7fe3a6c6201edce2fab64699c17167",
+  "homepage": "https://github.com/ircanywhere/irc-factory#readme",
+  "keywords": [
+    "client",
+    "irc",
+    "library",
+    "persistance"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/ircanywhere/irc-factory/raw/master/LICENSE"
+    }
+  ],
+  "main": "lib/api",
+  "name": "irc-factory",
+  "optionalDependencies": {},
+  "readme": "# irc-factory [![Build Status](https://travis-ci.org/ircanywhere/irc-factory.png)](https://travis-ci.org/ircanywhere/irc-factory) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ircanywhere/irc-factory/trend.png)](https://bitdeli.com/free \"Bitdeli Badge\")\n\n**Some stress tests have been done** [Click here](https://github.com/ircanywhere/irc-factory/wiki/Stress-Tests)\n\nA rebuilt irc-factory from [irc-socket](https://github.com/Havvy/irc-socket) and [irc-message](https://github.com/expr/irc-message), irc-factory was originally based on [node-irc](https://github.com/martynsmith/node-irc), however it got hacked away at and eventually turned into a half functional slow pile of junk.\n\nI decided on the task of re-designing it from the ground up for the new [ircanywhere](https://github.com/ircanywhere/ircanywhere/tree/0.2.0). It's built ontop of a two rapid barebone irc socket and irc parsing libraries, it has a similar api to node-irc but ultimately has almost none of the bulk of it. The main difference between node-irc is that it's primary design is to allow for long running irc clients, which means you can seperate your program and irc client processes to allow for instant resumes.\n\nInstallation and usage docs are in the [wiki](https://github.com/ircanywhere/irc-factory/wiki/Setup-&-Usage).",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ircanywhere/irc-factory.git"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "version": "1.10.1"
+}
